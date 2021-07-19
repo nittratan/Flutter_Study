@@ -1,0 +1,45 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(myapp());
+}
+
+class myapp extends StatelessWidget {
+  const myapp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Weather App",
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "Wether App",
+            style: TextStyle(
+              fontSize: 20.5,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        body: Center(
+            child: FlatButton(
+          color: Colors.yellow, //background color
+         // splashColor: Colors.cyan,
+          textColor: Colors.red,
+          padding: EdgeInsets.all(10.0),
+          highlightColor: Colors.green,
+          onPressed: () {},
+          child: Text(
+            "Click Here!",
+            style: TextStyle(
+              fontSize: 20.4,
+            ),
+          ),
+        )),
+      ),
+    );
+  }
+}
