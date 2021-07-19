@@ -1,0 +1,55 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(myapp());
+}
+
+class myapp extends StatelessWidget {
+  const myapp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Weather App",
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "Wether App",
+            style: TextStyle(
+              fontSize: 20.5,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        body: Center(
+          child: Text(
+            "Hi am nitian i study in nitt i am learning flutter",
+            style: new TextStyle(
+              color: Colors.red,
+              fontSize: 40.0,
+
+              // fontStyle: FontStyle.italic,
+              // fontWeight: FontWeight.bold,
+              //  fontFamily: "New Times Roman",
+              //  backgroundColor: Colors.black,
+              // background: Paint()
+              //   ..color = Colors.black
+              //   ..style = PaintingStyle.fill,
+              //letterSpacing: 10.0,
+              // wordSpacing: 20.5,
+              // decoration: TextDecoration.underline,
+              // decorationColor: Colors.black,
+            ),
+            // textAlign: TextAlign.center,
+            // textDirection: TextDirection.ltr,
+            // maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+      ),
+    );
+  }
+}
